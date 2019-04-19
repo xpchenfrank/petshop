@@ -20,7 +20,7 @@ public class HomeController {
     }
 
     @GetMapping("/getNowRecommend")
-    List<HomeRecommend> getNowRecommend() {
+    List<HomeRecommend> getNowRecommendTest() {
 
         System.out.println("tests faileds");
 
