@@ -10,6 +10,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/home")
 public class HomeController {
+    
+    private int a; // test
 
     @Autowired
     private HomeService homeService;
@@ -20,7 +22,7 @@ public class HomeController {
     }
 
     @GetMapping("/getNowRecommend")
-    List<HomeRecommend> getNowRecommend() {
+    List<HomeRecommend> getNowRecommend() { // jjjjjjajaj
         return homeService.getNowRecommend();
     }
 
