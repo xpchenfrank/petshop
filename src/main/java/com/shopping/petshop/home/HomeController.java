@@ -11,12 +11,19 @@ import java.util.List;
 @RequestMapping("/home")
 public class HomeController {
 
+    private int a; // test
+
     @Autowired
     private HomeService homeService;
 
     @GetMapping("/getNowBanner")
     List<HomeBanner> getNowBanner() {
         return homeService.getNowBanner();
+    }
+
+    @GetMapping("/getNowRecommend")
+    List<HomeRecommend> getNowRecommend() { // jjjjjjajaj
+        return homeService.getNowRecommend();
     }
 
     @GetMapping("/getNowRecommend")
