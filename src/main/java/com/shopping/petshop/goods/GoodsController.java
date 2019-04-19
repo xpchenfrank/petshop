@@ -14,6 +14,11 @@ public class GoodsController {
 
     @RequestMapping("/{id}")
     GoodsDetail getGoodsDetail(@PathVariable(name = "id") String skukId) {
+
+        System.out.println("sdfsdfsdfsdfsdfsdf");
+
+        System.out.println("ASDAFSDF");
+
         return goodsService.getGoodsDetail(skukId);
     }
 

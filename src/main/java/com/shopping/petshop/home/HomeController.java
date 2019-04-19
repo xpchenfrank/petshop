@@ -21,6 +21,11 @@ public class HomeController {
 
     @GetMapping("/getNowRecommend")
     List<HomeRecommend> getNowRecommend() {
+
+        System.out.println("tests faileds");
+
+        System.out.println("sdfsdfsdfsdf");
+
         return homeService.getNowRecommend();
     }
 
